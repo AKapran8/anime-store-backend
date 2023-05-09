@@ -9,4 +9,5 @@ This repo is the part of my full stack application
 4. Download second part of application https://github.com/AKapran8/anime-store-frontend
 
 # start
-use this command in your terminal `npm run start:server`
+1. use this command in your terminal `npm run start:server`
+2. Don't forget to start frontend part of the application (use `npm run start` )
