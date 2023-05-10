@@ -164,7 +164,7 @@ const editHero = async (req, res, next) => {
     hero.imageUrl = newImgUrl;
 
     if (prevImageUrl && newImgUrl) {
-      imgHelpers.changeImageName(prevImageUrl, newImgUrl); // change current image name in storage
+      await imgHelpers.changeImageName(prevImageUrl, newImgUrl); // change current image name in storage
     }
 
     await hero.save();
