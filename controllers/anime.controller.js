@@ -247,7 +247,7 @@ const copyAnime = async (req, res, next) => {
       userId: userId,
     });
 
-    if (existed) return res.status(400).json({ message: "The name existed" });
+    if (existed) return res.status(400).json({ message: "The name was existed" });
 
     const anime = new Anime({
       name: copiedAnime.name,
